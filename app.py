@@ -47,8 +47,10 @@ with gr.Blocks(title='是海獭不是水獭',css=css) as demo:
 
 
         gr.Examples(
-        examples=[os.path.join(os.path.dirname(__file__), "examples/sea_otter.jpg"),
-                  os.path.join(os.path.dirname(__file__), "examples/river_otter.jpg")],
+        # examples=[os.path.join(os.path.dirname(__file__), "examples/sea_otter.jpg"),
+        #           os.path.join(os.path.dirname(__file__), "examples/river_otter.jpg")],
+        examples=["./examples/sea_otter.jpg",
+                  "./examples/river_otter.jpg"],
         inputs=image_1,
         )
 
