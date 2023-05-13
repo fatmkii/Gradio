@@ -38,7 +38,7 @@ def clear(*args):
 with gr.Blocks(title='是海獭不是水獭',css=css) as demo:
     gr.Markdown("# 海獭和水獭是不同的，和水獭")
     with gr.Tab("YoloV8"):
-        image_1 = gr.Image(type='numpy',brush_radius=0).style(height=500)
+        image_1 = gr.Image(type='numpy',brush_radius=0).style(height=400)
         text_output_1 = gr.Markdown()
         output_1 = [text_output_1,image_1]
         with gr.Row():
